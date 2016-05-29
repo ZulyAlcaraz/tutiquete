@@ -66,7 +66,50 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/change-password',
       templateUrl: 'templates/change-password.html',
       controller: 'AppCtrl'
+    })
+
+    // Disponibilidad //
+    .state('availability', {
+      url: '/availability',
+      templateUrl: 'templates/availability.html',
+      controller: 'AppCtrl'
+    })
+
+    // Historial de viajes //
+    .state('travel-history', {
+      url: '/travel-history',
+      templateUrl: 'templates/travel-history.html',
+      controller: 'AppCtrl'
+    })
+
+    // Historial de viajes //
+    .state('pay-online', {
+      url: '/pay-online',
+      templateUrl: 'templates/pay-online.html',
+      controller: 'AppCtrl'
+    })
+
+     // Reserva //
+    .state('reserve', {
+      url: '/reserve',
+      templateUrl: 'templates/reserve.html',
+      controller: 'AppCtrl'
+    }) 
+
+    // Imprimir reserva //
+    .state('print-reserve', {
+      url: '/print-reserve',
+      templateUrl: 'templates/print-reserve.html',
+      controller: 'AppCtrl'
+    })
+
+    // Selección de sillas //
+    .state('selection-chairs', {
+      url: '/selection-chairs',
+      templateUrl: 'templates/selection-chairs.html',
+      controller: 'AppCtrl'
     });
+    
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/main');
 });

@@ -1,4 +1,4 @@
-<ion-view view-title="Tiquetes">
+<ion-view view-title="Reserva">
   <ion-content>
 
     <form class="list">
@@ -22,10 +22,6 @@
         </select>
       </label>
 
-      <ion-toggle ng-model="regreso" toggle-class="toggle-dark">Ida y regreso</ion-toggle>
-
-      <ion-toggle ng-model="ida" toggle-class="toggle-dark">Sólo ida</ion-toggle>
-
       <label class="item item-input">
         <span class="input-label">Salida</span>
         <input type="date">
@@ -36,15 +32,25 @@
         <input type="date">
       </label>
 
+      <label class="item item-input">
+        <span class="input-label">Total a pagar $</span>
+        <input type="number" ng-disabled="true" ng-value="100000">
+      </label>
+
     </form>
 
-    <div class="padding">
-      <button class="button button-block button-royal" ui-sref="availability">
-        Consultar disponibilidad
-      </button>
+    <div class="card">
+      <div class="item item-divider">
+        Información de la reserva
+      </div>
+      <div class="item item-text-wrap">
+        ....
+      </div>
+    </div>
 
-      <button class="button button-block button-dark" ui-sref="travel-history">
-        Ir a historial de viajes
+    <div class="padding">
+      <button class="button button-block button-royal" ui-sref="print-reserve">
+        Confirmar reserva
       </button>
     </div>
 

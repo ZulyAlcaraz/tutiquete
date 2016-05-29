@@ -1,0 +1,56 @@
+<ion-view view-title="Historial de viajes">
+  <ion-content>
+
+  	<div class="list">
+      <a class="item item-avatar" href="#">
+        <img src="../img/default-avatar.png">
+        <h2>Carlos Restrepo</h2>
+        <p>1.089.878.123</p>
+      </a>
+
+      <div class="item item-divider">
+        Historial
+      </div>
+
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+
+      <div class="item item-icon-right" href="#">
+        <i class="icon ion-ios-cloud-download royal"></i>
+        <p>Fecha: 12/12/2012</p>
+        <p>Origen: Medellín</p>
+        <p>Destino: Bogotá</p>
+        <p>Estado: <span class="balanced">Realizado</span></p>
+        <p>Valor: $100.000</p>
+      </div>
+
+
+      <ion-checkbox class="item-checkbox-right checkbox-royal" ng-model="filter.blue">
+        <p>Fecha: 12/12/2012</p>
+        <p>Origen: Medellín</p>
+        <p>Destino: Bogotá</p>
+        <p>Estado: <span class="assertive">Pendiente</span></p>
+        <p>Valor: $100.000</p>
+      </ion-checkbox>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-royal" ui-sref="pay-online">
+        Pago en línea
+      </button>
+
+      <button class="button button-block button-dark">
+        Eliminar reserva
+      </button>
+
+      <button class="button button-block button-dark" ui-sref="buy-ticket">
+        Cambiar reserva
+      </button>
+    </div>
+
+
+  </ion-content>
+  <chat-button></chat-button>
+</ion-view>

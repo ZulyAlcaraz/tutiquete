@@ -1,1 +1,103 @@
-availability.html
+<ion-view view-title="Disponibilidad">
+  <ion-content>
+
+    <div class="list">
+      <div class="item item-divider">
+        Ida
+      </div>
+
+      <div class="item row">
+        <div class="col col-20"></div>
+        <div class="col dark">Ciudad</div>
+        <div class="col dark">Valor</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Medellín</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Bogotá</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Cali</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+
+      <div class="item item-divider">
+        Regreso
+      </div>
+
+      <div class="item row">
+        <div class="col col-20"></div>
+        <div class="col dark">Ciudad</div>
+        <div class="col dark">Valor</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Medellín</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Bogotá</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+
+      <div class="item row">
+        <div class="col col-20">
+          <label class="checkbox checkbox-royal">
+            <input type="checkbox" class="">
+          </label>
+        </div>
+        <div class="col col-center">Cali</div>
+        <div class="col col-center">$100.000</div>
+      </div>
+    </div>
+
+    <label class="item item-input">
+      <span class="input-label">Total a pagar $</span>
+      <input type="number" ng-disabled="true" ng-value="100000">
+    </label>
+
+    <div class="padding">
+      <button class="button button-block button-royal" ui-sref="selection-chairs">
+        Seleccionar silla
+      </button>
+      <div class="button-bar">
+        <a class="button button-royal" ui-sref="reserve">Reserva</a>
+        <a class="button button-dark" ui-sref="pay-online">Pago en línea</a>
+      </div>
+    </div>
+
+  </ion-content>
+  <chat-button></chat-button>
+</ion-view>
