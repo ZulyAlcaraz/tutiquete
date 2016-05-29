@@ -117,10 +117,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-    // Datos de chat //
+    // Chat //
     .state('chat', {
       url: '/chat',
       templateUrl: 'templates/chat.html',
+      controller: 'AppCtrl'
+    })
+
+    // Salir del chat //
+    .state('leave-chat', {
+      url: '/leave-chat',
+      templateUrl: 'templates/leave-chat.html',
       controller: 'AppCtrl'
     });
     
