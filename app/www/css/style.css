@@ -1,1 +1,25 @@
 /* Empty. Add your own CSS if you like */
+
+/* ** Generales ** */
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+/* ** Main ** */
+.main-content .scroll,
+.main-content .scroll .row {
+	height: 100%;
+}
+.main-content .row .col {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+/* ** Chat ** */
+.chat-button {
+	position: fixed;
+    right: 11px;
+    bottom: 1%;
+}

@@ -1,0 +1,53 @@
+<ion-view view-title="Tiquetes">
+  <ion-content>
+
+    <form class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Origen
+        </div>
+        <select>
+          <option selected>Medellín</option>
+          <option>Bogotá</option>
+        </select>
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Destino
+        </div>
+        <select>
+          <option selected>Bogotá</option>
+          <option>Cali</option>
+        </select>
+      </label>
+
+      <ion-toggle ng-model="regreso" toggle-class="toggle-dark">Ida y regreso</ion-toggle>
+
+      <ion-toggle ng-model="ida" toggle-class="toggle-dark">Sólo ida</ion-toggle>
+
+      <label class="item item-input">
+        <span class="input-label">Salida</span>
+        <input type="date">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Regreso</span>
+        <input type="date">
+      </label>
+
+    </form>
+
+    <div class="padding">
+      <button class="button button-block button-royal">
+        Consultar disponibilidad
+      </button>
+
+      <button class="button button-block button-dark">
+        Ir a historial de viajes
+      </button>
+    </div>
+
+  </ion-content>
+  <chat-button></chat-button>
+</ion-view>

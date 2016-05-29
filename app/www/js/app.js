@@ -22,52 +22,51 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  $ionicConfigProvider.backButton.previousTitleText(false).text(' ');
   $stateProvider
 
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
-  })
-
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/search.html'
-      }
-    }
-  })
-
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
+    // Página inicial //
+    .state('main', {
+      url: '/main',
+      templateUrl: 'templates/main.html',
+      controller: 'AppCtrl'
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
+    // Registrarse //
+    .state('signup', {
+      url: '/signup',
+      templateUrl: 'templates/signup.html',
+      controller: 'AppCtrl'
+    })
+
+    // Ingresar //
+    .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html',
+      controller: 'AppCtrl'
+    })
+
+    // Comprar tiquete //
+    .state('buy-ticket', {
+      url: '/buy-ticket',
+      templateUrl: 'templates/buy-ticket.html',
+      controller: 'AppCtrl'
+    })
+
+    // Olvidó contraseña //
+    .state('forgot-password', {
+      url: '/forgot-password',
+      templateUrl: 'templates/forgot-password.html',
+      controller: 'AppCtrl'
+    })
+
+    // Cambiar contraseña //
+    .state('change-password', {
+      url: '/change-password',
+      templateUrl: 'templates/change-password.html',
+      controller: 'AppCtrl'
+    });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/main');
 });

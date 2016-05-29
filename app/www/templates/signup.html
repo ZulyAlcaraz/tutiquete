@@ -1,0 +1,93 @@
+<ion-view view-title="Registrarse">
+  <ion-content>
+
+    <form class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Tipo de documento
+        </div>
+        <select>
+          <option selected>CC</option>
+          <option>TI</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Número de documento</span>
+        <input type="number">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Fecha de nacimiento</span>
+        <input type="date">
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+         Genero
+        </div>
+        <select>
+          <option selected>F</option>
+          <option>M</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Nombres</span>
+        <input type="text">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Apellidos</span>
+        <input type="text">
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+         Departamento
+        </div>
+        <select>
+          <option selected>Antioquia</option>
+        </select>
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+         Ciudad
+        </div>
+        <select>
+          <option selected>Medellín</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Dirección</span>
+        <input type="text">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Teléfono</span>
+        <input type="tel">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Celular</span>
+        <input type="tel">
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Correo electrónico</span>
+        <input type="email">
+      </label>
+      
+    </form>
+
+    <div class="row padding">
+      <button class="button button-royal col-50" ui-sref="buy-ticket">
+        Guardar
+      </button>
+    </div>
+
+  </ion-content>
+  <chat-button></chat-button>
+</ion-view>
