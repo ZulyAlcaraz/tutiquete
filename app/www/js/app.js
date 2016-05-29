@@ -108,6 +108,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/selection-chairs',
       templateUrl: 'templates/selection-chairs.html',
       controller: 'AppCtrl'
+    })
+
+    // Datos de chat //
+    .state('chat-data', {
+      url: '/chat-data',
+      templateUrl: 'templates/chat-data.html',
+      controller: 'AppCtrl'
+    })
+
+    // Datos de chat //
+    .state('chat', {
+      url: '/chat',
+      templateUrl: 'templates/chat.html',
+      controller: 'AppCtrl'
     });
     
   // if none of the above states are matched, use this as the fallback
