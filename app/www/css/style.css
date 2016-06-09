@@ -8,15 +8,8 @@ ion-content {
 	margin-bottom: 50px !important;
 }
 /* ** Main ** */
-.main-content .scroll,
-.main-content .scroll .row {
-	height: 100%;
-}
-.main-content .row .col {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 50%;
+.main-content .row .col img {
+	width: 100%;
 }
 
 /* ** Chat ** */

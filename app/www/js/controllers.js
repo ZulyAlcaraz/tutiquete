@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $ionicPopup) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -24,7 +24,7 @@ angular.module('starter.controllers', [])
     $scope.modal.hide();
   };
 
-  // Open the login modal
+  // Open the login modal|
   $scope.login = function() {
     $scope.modal.show();
   };
@@ -39,18 +39,33 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
-})
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
+  // Buy ticket
+  $scope.options = {
+    ida: false,
+    regreso: true
+  };
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.updateOptions = function (item, value) {
+    if (item === 'regreso') {
+      $scope.options.ida = !value;
+    } else {
+      $scope.options.regreso = !value;
+    }
+  };
+
+  // Travel history
+  $scope.showConfirm = function() {
+    var confirmPopup = $ionicPopup.confirm({
+      title: 'Eliminar',
+      template: '¿Esta seguro que desea eliminar la reserva?',
+      buttons: [
+        { text: 'Cancelar' },
+        {
+          text: 'Eliminar',
+          type: 'button-royal'
+        }
+      ]
+    });
+  };
 });

@@ -22,9 +22,9 @@
         </select>
       </label>
 
-      <ion-toggle ng-model="regreso" toggle-class="toggle-dark">Ida y regreso</ion-toggle>
+      <ion-toggle ng-model="options.regreso" toggle-class="toggle-dark" ng-change="updateOptions('regreso', options.regreso)">Ida y regreso</ion-toggle>
 
-      <ion-toggle ng-model="ida" toggle-class="toggle-dark">Sólo ida</ion-toggle>
+      <ion-toggle ng-model="options.ida" toggle-class="toggle-dark" ng-change="updateOptions('ida', options.ida)">Sólo ida</ion-toggle>
 
       <label class="item item-input">
         <span class="input-label">Salida</span>
